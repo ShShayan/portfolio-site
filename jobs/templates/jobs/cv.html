@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Shayan Shahrestani" />
+    <title>Shayan Shahrestani</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Shayan Shahrestani</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="{% static 'assets/img/profile.jpg' %}" alt="..." /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'home' %}">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger active" style="font-size:20px" href="{% url 'CV' %}">Curriculum vitae</a></li>
+                <hr class="m-0" style="color:black;height: 2px;"/>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:12px" href="#interests">Areas of Interest</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:12px" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:12px" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:12px" href="#softwares">Softwares</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:12px" href="#research">Research Projects</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:12px" href="#publication">Publication</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:12px" href="#experience">Experiences</a></li>
+                <hr class="m-0" style="color:black;height: 2px;"/>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="#education">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="#skills">Projects</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="#interests">Blog</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="#awards">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+
+        <!-- Interests-->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <span class="align-right">
+                    <button href="{% static 'assets/pdf/Shahrestani-Shayan-CV.pdf' %}">Download my CV as PDF</button>
+                    </span>
+                <p></p>
+                <h2 class="mb-5">Areas of Interest</h2>
+                <p class="mb-0">• Building Energy and Performance analysis</p>
+                <p class="mb-0">• Thermal Comfort Analysis</p>
+                <p class="mb-0">• Machine Learning and its applications in Built Environment</p>
+                <p class="mb-5">• Circularity and Digital Twins in Built Environment</p>
+                <h2 class="mb-5">Personal Interest</h2>
+                <p class="mb-0">• Hiking and camping</p>
+                <p class="mb-0">• Photography</p>
+                <p class="mb-0">• Playing chess (Wanna play? <a href="https://play.chess.com/bPq4H" target="_blank">Challeng me here!</a>)</p>
+                <p class="mb-0">• Reading and Programming</p>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Shahid Beheshti University</h3>
+                        <div class="subheading mb-1">Masters of Science</div>
+                        <div class="subheading mb-3">Architecture and Energy (Building Science)</div>
+                        <p>&emsp;Major Area: Outdoor Thermal Comfort Analysis</p>
+                        <p>&emsp;Thesis title: Development of a vernacular software framework of built environment
+                            design: Investigating effects of water bodies and vegetation on outdoor thermal comfort</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">September 2019 - September 2021</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Islamic Azad University- Tehran South Branch</h3>
+                        <div class="subheading mb-1">Bachelor of Science</div>
+                        <div class="subheading mb-3">Architecture Engineering</div>
+                        <p>&emsp;Thesis title: Design of music hall complex</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">September 2014 - September 2019</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Allameh Tabatabaee High School</h3>
+                        <div class="subheading mb-3">High School Diploma in Mathematics and Physics</div>
+
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">September 2011 - May 2014</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Skills</h2>
+                <div class="subheading mb-3">Architectural Skills</div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Building Energy Modeling, Simulation and Optimization
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Experienced in thermal comfort and IEQ research
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Assessment of Thermal and Visual Comfort in Buildings
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Computational Fluid Dynamics
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Building HVAC Design
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Daylight and Electric Lighting Design
+                    </li>
+                    <li class="mb-3">
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Architecture and Urban Design (Complete Building Design from Concept to Detailed Plans)
+                    </li>
+                </ul>
+                <div class="subheading mb-3">Programming Languages</div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Python Programming specially for Data Science and Machine Learning with general knowledge in other areas such as web development using Django (This site is the example for it😊)
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Familiarity with C and C++ Programming Languages, Object-Oriented Programming with Java, and Octave language for Machine Learning
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Softwares-->
+        <section class="resume-section" id="softwares">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Softwares</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                    <div class="flex-grow-1">
+                        <div class="subheading mb-1">•	Rhino and Grasshopper including Climate Studio, Diva, Honey Bee, Lady Bug, Butterfly, Wallacei</div>
+                        <p>For 3D modeling and presentation, Energy modeling, Thermal and Visual Comfort Analysis, and optimization analysis</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                    <div class="flex-grow-1">
+                        <div class="subheading mb-1">•	Design Builder</div>
+                        <p>Energy Modeling and optimization, HVAC design, Parametric analysis, CFD simulation</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                    <div class="flex-grow-1">
+                        <div class="subheading mb-1">•	ENVI-met</div>
+                        <p>Urban environment and outdoor thermal comfort assessment</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                    <div class="flex-grow-1">
+                        <div class="subheading mb-1">•	Ansys Fluent</div>
+                        <p>CFD simulation of Air flow in urban context or enclosed space</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                    <div class="flex-grow-1">
+                        <div class="subheading mb-1">•	Dialux</div>
+                        <p>Electric Lighting Design</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                    <div class="flex-grow-1">
+                        <div class="subheading mb-1">•	Autocad</div>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                    <div class="flex-grow-1">
+                        <div class="subheading mb-1">•	Photoshop</div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- research-->
+        <section class="resume-section" id="research">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Research Projects</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">An investigation around possible effects of different building facades on UHI through field measurements and simulation</h3>
+                        <div class="subheading mb-3">research paper currently being written</div>
+                        <p>First Author of the research paper</p>
+                        <p>Supervisor: Dr. Zahra Sadat Zomorodian</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Assessing thermal effect of building integrated photovoltaic on an adjacent wall using CFD simulation,</h3>
+                        <div class="subheading mb-3">Team member of the project</div>
+                        <p>Supervisor: Dr. Shahram Delfani</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2020</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Investigation of the role of climate in formation of rural houses in Zavare, Isfahan, Iran</h3>
+                        <div class="subheading mb-3">Team member of the project</div>
+                        <p>Supervisor: Dr.Mansoureh Tahbaz</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2019</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Investigation of building morphology effect on thermal comfort in Shahid Beheshti University campus in Tehran, Iran using field study</h3>
+                        <div class="subheading mb-3">Team member of the project</div>
+                        <p>Supervisor: Dr.Mansoureh Tahbaz</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2019</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- publication -->
+        <section class="resume-section" id="publication">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Publication</h2>
+                {% for pub in pubs.all %}
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">{{ pub.title }}</h3>
+                        <div class="subheading mb-3">{{ pub.journal }}</div>
+                        <p>{{ pub.authers }}</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">{{ pub.year }}</span></div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Experience</h2>
+                {% for job in jobs.all %}
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">{{ job.title }}</h3>
+                        <div class="subheading mb-3">{{ job.employer }}</div>
+                        <p>{{ job.description }}</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">{{ job.startyear }} - {{ job.endyear }}</span></div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        <hr class="m-0" />
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+
+</html>
