@@ -3,61 +3,122 @@
 {% load static %}
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="Shayan Shahrestani" />
-  <title>Contact me</title>
-  <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-  <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-  <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Shayan Shahrestani" />
+    <title>Contact me</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
 </head>
 
 <body id="page-top">
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <span class="d-block d-lg-none">Shayan Shahrestani</span>
-          <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static 'assets/img/profile.jpg' %}" alt="..." /></span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link js-scroll-trigger active" style="font-size:20px" href="#">About</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'CV' %}">Curriculum vitae</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'portfolio' %}">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'projects' %}">Projects</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'allblog' %}">Blog</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'contact' %}">Contact</a></li>
-          </ul>
-      </div>
-  </nav>
-  <!-- Page Content-->
-  <div class="container-fluid p-0">
-      <!-- About-->
-      <section class="resume-section" id="about">
-          <div class="resume-section-content">
-              <h1 class="mb-0">
-                  Contact
-                  <span class="text-primary">me</span>
-              </h1>
-              <div class="subheading mb-5">
-                <a class="social-icon" href="https://t.me/ShayanSh" target="_blank"><i class="fab fa-telegram"></i></a> · +98 912 791 8459 · <a href="mailto:shayanshahrestani@gmail.com">shayanshahrestani@gmail.com</a>
-              </div>
-              <p class="lead mb-5">You can contact me through my Email, Telegram ID, phone number and also by the form bellow!</p>
-          </div>
-      </section>
-      <hr class="m-0" />
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Shayan Shahrestani</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="{% static 'assets/img/profile.jpg' %}" alt="..." /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'home' %}">About</a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px"
+                        href="{% url 'CV' %}">Curriculum vitae</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px"
+                        href="{% url 'portfolio' %}">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px"
+                        href="{% url 'projects' %}">Projects</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px"
+                        href="{% url 'allblog' %}">Blog</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger active" style="font-size:20px"
+                        href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    Contact
+                    <span class="text-primary">me</span>
+                </h1>
+                <div class="subheading mb-5">
+                    <a class="social-icon" href="https://t.me/ShayanSh" target="_blank"><i
+                            class="fab fa-telegram"></i></a> · +98 912 791 8459 · <a
+                        href="mailto:shayanshahrestani@gmail.com">shayanshahrestani@gmail.com</a>
+                </div>
+                <p class="lead mb-0">You can contact me through my Email, Telegram ID, phone number and also by the form
+                    bellow!</p>
+                <p class="lead mb-5">Please do consider contacting me for any kind of collaborations in the field of architectural
+                    design, programming and research work. Also I would be very happy to hear your oponions and recommendations 
+                    about this website and my work. By the way only the "Tell me ..." field is required (if you want to stay anonymous!)
+                </p>
 
-  <!-- Bootstrap core JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Core theme JS-->
-  <script src="{% static 'js/scripts.js' %}"></script>
+                <!-- Forme ertebat -->
+                <form action="{% url 'contact' %}" method="post" id="commentform" class="form-horizontal" novalidate="">
+                    {% csrf_token %}
+                    <fieldset>
+                        {% if msg %}
+                        <br/>
+                        <p class="text-success">{{ msg }}</p>
+                        {% endif %}
+                        {% if error %}
+                        <br/>
+                        <p class="text-danger">{{ error }}</p>
+                        {% endif %}
+                        <div class="form-group label-floating is-empty">
+                            <div class="col-xs-12"><label class="control-label">Tell me whatever you want:</label>
+                                <textarea id="comment" name="comment" class="form-control" rows="5" required="required"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group label-floating is-empty">
+                            <div class="col-xs-12"><label class="control-label">Your name:</label>
+                                <input id="author" type="text" name="author" class="form-control" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group label-floating is-empty">
+                            <div class="col-xs-12"><label class="control-label">Subject:</label>
+                                <input id="subject" type="text" name="subject" class="form-control" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group label-floating is-empty">
+                            <div class="col-xs-12"><label class="control-label">Your Email:</label>
+                                <input id="email" type="email" name="email" class="form-control" required="required">
+                            </div>
+                        </div>
+                        <p class="form-submit"></p>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input name="submit" type="submit" id="submit"
+                                    class="btn btn-raised btn-success pull-left submit" value="Send!">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <!-- Forme ertebat -->
+
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js' %}"></script>
 </body>
 
 

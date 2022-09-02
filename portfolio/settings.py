@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'jobs.apps.JobsConfig',
     'blog.apps.BlogConfig',
     'publication.apps.PublicationConfig',
+    'comments.apps.CommentsConfig',
 ]
 
 MIDDLEWARE = [
