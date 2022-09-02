@@ -4,8 +4,7 @@ from publication.models import Publication
 from comments.models import Comment
 
 def home(request):
-    jobs = Job.objects
-    return render(request, 'jobs/home.html', {'jobs':jobs})
+    return render(request, 'jobs/home.html')
 
 def CV(request):
     jobs = Job.objects
@@ -43,3 +42,15 @@ def contact(request):
             return render(request, 'jobs/contact.html',  {'msg':'Your message has been send successfully!'})
     else:
         return render(request, 'jobs/contact.html')
+
+def arch_portfolio(request):
+    return render(request, 'jobs/arch-portfolio.html')
+
+def energy_portfolio(request):
+    return render(request, 'jobs/energy-portfolio.html')
+
+def web_portfolio(request):
+    return render(request, 'jobs/web-portfolio.html')
+
+def photo_portfolio(request):
+    return render(request, 'jobs/photo-portfolio.html')

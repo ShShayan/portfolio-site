@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="Shayan Shahrestani" />
-  <title>Shayan Shahrestani</title>
+  <title>Shayan Shahrestani · Portfolio</title>
   <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
   <!-- Font Awesome icons (free version)-->
   <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -16,6 +16,30 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+
+  <style>
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    height: 40%;
+    border-radius: 5px;
+    margin-right: 10px;
+    }
+
+    .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    }
+
+    img {
+    border-radius: 5px 5px 0 0;
+    }
+
+    .container {
+    padding: 16px 16px;
+    }
+  </style>
+
 </head>
 
 <body id="page-top">
@@ -28,9 +52,15 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link js-scroll-trigger active" style="font-size:20px" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'home' %}">About</a></li>
               <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'CV' %}">Curriculum vitae</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'portfolio' %}">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger active" style="font-size:20px" href="{% url 'portfolio' %}">Portfolio</a></li>
+              <hr class="m-0" style="color:black;height: 2px;"/>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:12px" href="#{% url 'arch_portfolio' %}">Architectural Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger active" style="font-size:12px" href="{% url 'energy_portfolio' %}">Building Performance Analysis</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:12px" href="{% url 'web_portfolio' %}">Web Developement</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:12px" href="{% url 'photo_portfolio' %}">Photography</a></li>
+              <hr class="m-0" style="color:black;height: 2px;"/>
               <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'projects' %}">Projects</a></li>
               <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'allblog' %}">Blog</a></li>
               <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'contact' %}">Contact</a></li>
@@ -43,34 +73,15 @@
       <section class="resume-section" id="about">
           <div class="resume-section-content">
               <h1 class="mb-0">
-                  Shayan
-                  <span class="text-primary">Shahrestani</span>
+                  My
+                  <span class="text-primary">Portfolio</span>
               </h1>
-              <div class="subheading mb-5">
-                  Architect · Building Energy Analyst · Researcher · +98 912 791 8459 · 
-                  <a href="mailto:shayanshahrestani@gmail.com">shayanshahrestani@gmail.com</a>
-              </div>
-              <p class="lead mb-2">I am Shayan, a master of Architecture and Energy (Building Science) gradute from Shahid Beheshti University. 
-                  I am a trained architect and building performance analyst. I am very interested in integrated design and implementing this 
-                  method in my design process. I can take part in the design of a building in every stage and I am specifically interested in 
-                  coordinating the efforts of different teams and participants in the design process in order to reach more harmonius and sustainable 
-                  building.
-              </p>
-              <p class="lead mb-5">
-                Furtheremore, I am trying hard to pursue my studies by studying for Ph.D. degree. I am mainly interested in thermal comfort research, 
-                Urban Heat Islands, digitalization and digital twins, and circularity research. In addition to studying and reading latest pulications 
-                in the mentioned fields I am trying to contribute to my academic field by writing a research paper on effects of facade materials on UHI. 
-                I am interested in doing more research work and would very much appreciate if you contact me for collaborations in fields of design, 
-                programming and research.
-              </p>
-              <div class="social-icons">
-                  <a class="social-icon" href="https://www.linkedin.com/in/shayan-shahrestani/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                  <a class="social-icon" href="https://github.com/ShShayan" target="_blank"><i class="fab fa-github"></i></a>
-                  <a class="social-icon" href="https://www.youtube.com/channel/UCSvDEBE3GCBo17dzJsgYs5A" target="_blank"><i class="fab fa-youtube"></i></a>
-                  <a class="social-icon" href="https://t.me/ShayanSh" target="_blank"><i class="fab fa-telegram"></i></a>
-              </div>
-          </div>
-      </section>
+              <div class="subheading mb-3">Building Energy and Comfort Analysis</div>
+              <p class="lead mb-3">Nothing here for now :((</p>
+
+
+            </div>
+        </section>
       <hr class="m-0" />
 
   <!-- Bootstrap core JS-->

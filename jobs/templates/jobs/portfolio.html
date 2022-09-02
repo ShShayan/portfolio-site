@@ -16,6 +16,30 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+
+  <style>
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    height: 40%;
+    border-radius: 5px;
+    margin-right: 10px;
+    }
+
+    .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    }
+
+    img {
+    border-radius: 5px 5px 0 0;
+    }
+
+    .container {
+    padding: 16px 16px;
+    }
+  </style>
+
 </head>
 
 <body id="page-top">
@@ -28,9 +52,9 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link js-scroll-trigger active" style="font-size:20px" href="{% url 'home' %}">About</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'home' %}">About</a></li>
               <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'CV' %}">Curriculum vitae</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'portfolio' %}">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger active" style="font-size:20px" href="{% url 'portfolio' %}">Portfolio</a></li>
               <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'projects' %}">Projects</a></li>
               <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'allblog' %}">Blog</a></li>
               <li class="nav-item"><a class="nav-link js-scroll-trigger" style="font-size:20px" href="{% url 'contact' %}">Contact</a></li>
@@ -46,10 +70,52 @@
                   My
                   <span class="text-primary">Portfolio</span>
               </h1>
-              <div class="subheading mb-5">Architecture · Building Energy and Comfort Analysis · Web development</div>
-              <p class="lead mb-5">I am comfort.</p>
-          </div>
-      </section>
+              <div class="subheading mb-3">Architecture · Building Energy and Comfort Analysis · Web development · Photgraphy</div>
+              <p class="lead mb-3">A snippet of my work as an architect and building performance analysit alongside my web-dev work 
+                  (which this site is the prime example of) and photographs.</p>
+
+                <div class="row">
+                    <div class="card col mb-3" >
+                        <a href="{% url 'arch_portfolio' %}">
+                            <img src="{% static 'assets/img/architecture-cover.jpg' %}" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <h4><b>Arhitectural Portfolio</b></h4>  
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card col mb-3">
+                        <a href="{% url 'energy_portfolio' %}">
+                            <img src="{% static 'assets/img/energy-cover.jpg' %}" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <h4><b>Building Analysis portfolio</b></h4> 
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="card col mb-3">
+                        <a href="{% url 'web_portfolio' %}">
+                            <img src="{% static 'assets/img/web-cover.jpg' %}" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <h4><b>Web development portfolio</b></h4> 
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card col mb-3">
+                        <a href="{% url 'photo_portfolio' %}">
+                            <img src="{% static 'assets/img/photo-cover.jpg' %}" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <h4><b>Photography portfolio</b></h4> 
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
       <hr class="m-0" />
 
   <!-- Bootstrap core JS-->

@@ -28,4 +28,8 @@ urlpatterns = [
     path('projects/', jobs.views.projects, name='projects'),
     path('blog/', include('blog.urls')),
     path('contact/', jobs.views.contact, name='contact'),
+    path('portfolio/arch-portfolio', jobs.views.arch_portfolio, name='arch_portfolio'),
+    path('portfolio/energy-portfolio', jobs.views.energy_portfolio, name='energy_portfolio'),
+    path('portfolio/web-portfolio', jobs.views.web_portfolio, name='web_portfolio'),
+    path('portfolio/photo-portfolio', jobs.views.photo_portfolio, name='photo_portfolio'),
 ] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
