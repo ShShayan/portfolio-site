@@ -4,18 +4,18 @@ from publication.models import Publication
 from comments.models import Comment
 
 def home(request):
-    return render(request, 'jobs/home.html')
+    return render(request, 'jobs/home.html', {'title':'home'})
 
 def CV(request):
     jobs = Job.objects
     pubs = Publication.objects
-    return render(request, 'jobs/cv.html', {'jobs':jobs, 'pubs':pubs})
+    return render(request, 'jobs/cv.html', {'jobs':jobs, 'pubs':pubs, 'title':'CV'})
 
 def portfolio(request):
-    return render(request, 'jobs/portfolio.html')
+    return render(request, 'jobs/portfolio.html', {'title':'portfolio'})
 
 def projects(request):
-    return render(request, 'jobs/projects.html')
+    return render(request, 'jobs/projects.html', {'title':'projects'})
 
 def contact(request):
     if request.method == 'POST':
@@ -41,16 +41,16 @@ def contact(request):
             com.save()
             return render(request, 'jobs/contact.html',  {'msg':'Your message has been send successfully!'})
     else:
-        return render(request, 'jobs/contact.html')
+        return render(request, 'jobs/contact.html', {'title':'contact'})
 
 def arch_portfolio(request):
-    return render(request, 'jobs/arch-portfolio.html')
+    return render(request, 'jobs/arch-portfolio.html', {'title':'portfolio'})
 
 def energy_portfolio(request):
-    return render(request, 'jobs/energy-portfolio.html')
+    return render(request, 'jobs/energy-portfolio.html', {'title':'portfolio'})
 
 def web_portfolio(request):
-    return render(request, 'jobs/web-portfolio.html')
+    return render(request, 'jobs/web-portfolio.html', {'title':'portfolio'})
 
 def photo_portfolio(request):
-    return render(request, 'jobs/photo-portfolio.html')
+    return render(request, 'jobs/photo-portfolio.html', {'title':'portfolio'})
